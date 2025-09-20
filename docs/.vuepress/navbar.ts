@@ -7,14 +7,8 @@
 import { defineNavbarConfig } from 'vuepress-theme-plume'
 
 export const zhNavbar = defineNavbarConfig([
-  { text: '首页', link: '/' },
-  { text: '博客', link: '/blog/' },
-  { text: '标签', link: '/blog/tags/' },
-  { text: '归档', link: '/blog/archives/' },
-  {
-    text: '笔记',
-    items: [{ text: '示例', link: '/notes/demo/README.md' }]
-  },
+  { text: '计算技巧', link: '/notes/calculation-tricks/README.md' },
+  { text: '理论随笔', link: '/notes/theory-essay/README.md' },
 ])
 
 export const enNavbar = defineNavbarConfig([
@@ -24,7 +18,11 @@ export const enNavbar = defineNavbarConfig([
   { text: 'Archives', link: '/en/blog/archives/' },
   {
     text: 'Notes',
-    items: [{ text: 'Demo', link: '/en/notes/demo/README.md' }]
+    items: [
+      { text: 'Demo', link: '/en/notes/demo/README.md' },
+      { text: '计算技巧', link: '/en/notes/calculation-tricks/README.md' },
+      { text: '理论随笔', link: '/en/notes/theory-essay/README.md' },
+    ],
   },
 ])
 

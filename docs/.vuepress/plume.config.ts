@@ -58,7 +58,7 @@ export default defineThemeConfig({
        * @see https://theme-plume.vuejs.press/config/basic/#profile
        */
       profile: {
-        avatar: 'https://getwallpapers.com/wallpaper/full/5/e/2/12967.jpg',
+        avatar: 'https://getwallpapers.com/wallpaper/full/b/b/c/13070.jpg',
         name: 'atomcreate',
         description: '物质由原子构成',
         // circle: true,
@@ -85,7 +85,7 @@ export default defineThemeConfig({
        * @see https://theme-plume.vuejs.press/config/basic/#profile
        */
       profile: {
-        avatar: 'https://getwallpapers.com/wallpaper/full/5/e/2/12967.jpg',
+        avatar: 'https://getwallpapers.com/wallpaper/full/b/b/c/13070.jpg',
         name: 'atomcreate',
         description: '物质由原子构成',
         // circle: true,
