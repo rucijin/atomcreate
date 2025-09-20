@@ -14,7 +14,7 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/',
+  base: '/atomcreate/', // 这是部署到github相关的配置
   lang: 'zh-CN',
   locales: {
     '/': {
