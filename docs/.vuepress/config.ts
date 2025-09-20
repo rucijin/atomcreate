@@ -57,14 +57,14 @@ export default defineUserConfig({
      * @see https://theme-plume.vuejs.press/config/basic/#blog
      */
     // blog: false, // 禁用博客
-    // blog: {
-    //   postList: true, // 是否启用文章列表页
-    //   tags: true, // 是否启用标签页
-    //   archives: true, // 是否启用归档页
-    //   categories: true, // 是否启用分类页
-    //   postCover: 'right', // 文章封面位置
-    //   pagination: 15, // 每页显示文章数量
-    // },
+    blog: {
+      postList: true, // 是否启用文章列表页
+      tags: true, // 是否启用标签页
+      archives: true, // 是否启用归档页
+      categories: true, // 是否启用分类页
+      postCover: 'right', // 文章封面位置
+      pagination: 30, // 每页显示文章数量
+    },
 
     /* 博客文章页面链接前缀 */
     article: '/article/',
@@ -120,7 +120,7 @@ export default defineUserConfig({
     markdown: {
       abbr: true,         // 启用 abbr 语法  *[label]: content
       annotation: true,   // 启用 annotation 语法  [+label]: content
-    //   pdf: true,          // 启用 PDF 嵌入 @[pdf](/xxx.pdf)
+      pdf: true,          // 启用 PDF 嵌入 @[pdf](/xxx.pdf)
       caniuse: true,      // 启用 caniuse 语法  @[caniuse](feature_name)
       plot: true,         // 启用隐秘文本语法 !!xxxx!!
       bilibili: true,     // 启用嵌入 bilibili视频 语法 @[bilibili](bid)
@@ -142,11 +142,12 @@ export default defineUserConfig({
     //     python: true,     // ::: python-repl
     //   },
       math: {             // 启用数学公式
-        type: 'katex',
+        type: 'mathjax', // 可选 'katex' 或 'mathjax'
+        tex: { tags: 'all' },
       },
-    //   chartjs: true,      // 启用 chart.js
+      chartjs: true,      // 启用 chart.js
     //   echarts: true,      // 启用 ECharts
-    //   mermaid: true,      // 启用 mermaid
+      mermaid: true,      // 启用 mermaid
     //   flowchart: true,    // 启用 flowchart
       image: {
         figure: true,     // 启用 figure
@@ -158,27 +159,6 @@ export default defineUserConfig({
       imageSize: 'local', // 启用 自动填充 图片宽高属性，避免页面抖动
     },
 
-    /**
-     * 水印
-     * @see https://theme-plume.vuejs.press/guide/features/watermark/
-     */
-    // watermark: true,
-
-    /**
-     * 评论 comments
-     * @see https://theme-plume.vuejs.press/guide/features/comments/
-     */
-    // comment: {
-    //   provider: '', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-    //   comment: true,
-    //   repo: '',
-    //   repoId: '',
-    //   category: '',
-    //   categoryId: '',
-    //   mapping: 'pathname',
-    //   reactionsEnabled: true,
-    //   inputPosition: 'top',
-    // },
 
     /**
      * 资源链接替换
