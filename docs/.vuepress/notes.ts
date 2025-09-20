@@ -37,6 +37,34 @@ const zhTheoryEssay = defineNoteConfig({
   sidebar: 'auto',
 })
 
+const zhQuantumPhysics = defineNoteConfig({
+  dir: 'quantum-physics',
+  link: '/quantum-physics',
+  // sidebar: 'auto',
+  sidebar: 'auto',
+})
+
+const zhEnglish = defineNoteConfig({
+  dir: 'english',
+  link: '/english',
+  // sidebar: 'auto',
+  sidebar: 'auto',
+})
+
+const zhStatisticsPhysics = defineNoteConfig({
+  dir: 'statistics-physics',
+  link: '/statistics-physics',
+  // sidebar: 'auto',
+  sidebar: 'auto',
+})
+
+const zhMachineLearning = defineNoteConfig({
+  dir: 'machine-learning',
+  link: '/machine-learning',
+  // sidebar: 'auto',
+  sidebar: 'auto',
+})
+
 /**
  * 导出所有的 note
  * 每一个 note 都应该填入到 `notes.notes` 数组中
@@ -45,7 +73,7 @@ const zhTheoryEssay = defineNoteConfig({
 export const zhNotes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [zhCalculationTricks, zhTheoryEssay],
+  notes: [zhCalculationTricks, zhTheoryEssay, zhQuantumPhysics, zhEnglish, zhStatisticsPhysics, zhMachineLearning],
 })
 
 /* =================== locale: en-US ======================= */
