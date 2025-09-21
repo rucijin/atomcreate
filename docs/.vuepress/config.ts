@@ -89,18 +89,6 @@ export default defineUserConfig({
     search: { provider: 'local' },
 
     /**
-     * Algolia DocSearch
-     * 启用此搜索需要将 本地搜索 search 设置为 false
-     * @see https://theme-plume.vuejs.press/config/plugins/search/#algolia-docsearch
-     */
-    // search: {
-    //   provider: 'algolia',
-    //   appId: '',
-    //   apiKey: '',
-    //   indexName: '',
-    // },
-
-    /**
      * Shiki 代码高亮
      * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
      */
@@ -109,9 +97,6 @@ export default defineUserConfig({
       whitespace: true, // 启用 空格/Tab 高亮
       lineNumbers: true, // 启用行号
     },
-
-    /* 文章字数统计、阅读时间，设置为 false 则禁用 */
-    // readingTime: true,
 
     /**
       * markdown
@@ -143,12 +128,12 @@ export default defineUserConfig({
     //   },
       math: {             // 启用数学公式
         type: 'mathjax', // 可选 'katex' 或 'mathjax'
-        tex: { tags: 'all' },
+        tex: {
+          tags: 'all',
+        },
       },
       chartjs: true,      // 启用 chart.js
-    //   echarts: true,      // 启用 ECharts
       mermaid: true,      // 启用 mermaid
-    //   flowchart: true,    // 启用 flowchart
       image: {
         figure: true,     // 启用 figure
         lazyload: true,   // 启用图片懒加载
